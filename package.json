@@ -1,0 +1,18 @@
+{
+  "name": "code-4000-tdd",
+  "version": "1.0.0",
+  "description": "Starter project for TDD workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.spec.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "nick redshaw",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^4.0.1",
+    "chai": "^4.1.2"
+  }
+}
