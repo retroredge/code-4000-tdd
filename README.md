@@ -2,6 +2,9 @@ Code 4000 Test Driven Development Workshop
 ===
 This simple project is a starter template for demonstrating TDD using NodeJS with Mocha and Chai.
 
+The tag v0.1 contains the starting state for students i.e. no solution.
+The HEAD contains two annotated solutions.
+
 Prerequisites
 ---
 npm 5+
