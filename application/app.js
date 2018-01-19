@@ -1,11 +1,11 @@
 module.exports = {
-  aBoolean: function () {
+  aBoolean: () => {
     return true;
   },
-  aString: function () {
+  aString: () => {
     return '42'
   },
-  aNumber: function () {
+  aNumber: () => {
     return 42;
   }
 };

@@ -10,18 +10,18 @@
 // makes the 'assert' functions available for us to check our game's results.
 // These assert functions are provided by a third party library called 'Chai'.
 // The second statement makes our game available to the test code.
-var assert = require('chai').assert;
-var game = require('../application/fizzBuzzGame');
+const assert = require('chai').assert;
+const game = require('../application/fizzBuzzGame');
 
 // The 'describe' function is part of the Mocha library and it allows
 // us to group tests together logically. By running this single module
 // you will exercise your game code 12 times.
-describe('Fizz Buzz Tests', function () {
+describe('Fizz Buzz Tests', () => {
 
   // The 'it' function is part of the Mocha library and it allows
   // us to provide a human readable description for the test along
   // with a function containing the test(s) themselves.
-  it('says normal numbers', function () {
+  it('says normal numbers', () => {
       // This first test statement executes the game's 'say' function passing in the
       // Integer 1. The result must be a String equal to '1' for the test to pass
       assert.strictEqual(game.say(1), '1');
@@ -31,19 +31,19 @@ describe('Fizz Buzz Tests', function () {
 
   // Notice how the different 'it' functions in this module are used to
   // group tests together that are checking for the similar behaviour
-  it('says "Fizz" for numbers divisible by 3', function () {
+  it('says "Fizz" for numbers divisible by 3', () => {
     assert.strictEqual(game.say(3), 'Fizz');
     assert.strictEqual(game.say(9), 'Fizz');
     assert.strictEqual(game.say(21), 'Fizz');
   });
 
-  it('says "Buzz" for numbers divisible by 5', function () {
+  it('says "Buzz" for numbers divisible by 5', () => {
     assert.strictEqual(game.say(5), 'Buzz');
     assert.strictEqual(game.say(10), 'Buzz');
     assert.strictEqual(game.say(20), 'Buzz');
   });
 
-  it('says "Fizz Buzz" for numbers divisible by 3 and 5', function () {
+  it('says "Fizz Buzz" for numbers divisible by 3 and 5', () => {
     assert.strictEqual(game.say(15), 'Fizz Buzz');
     assert.strictEqual(game.say(30), 'Fizz Buzz');
     assert.strictEqual(game.say(45), 'Fizz Buzz');

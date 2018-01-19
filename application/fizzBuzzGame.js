@@ -6,7 +6,7 @@
 
 
 // This is the top level and only function in this module
-function say(number) {
+const say = (number) => {
   if (number % 3 === 0 && number % 5 === 0) {
     return 'Fizz Buzz';
   } else if (number % 3 === 0) {

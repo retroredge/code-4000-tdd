@@ -3,18 +3,18 @@
 
 // This is a function that is 'private' to this module. It is not available for other files to include and use
 // because it is not 'exported' by the statement at the bottom of this file.
-function isDivisibleByThree(number) {
+const isDivisibleByThree = (number) => {
   return number % 3 === 0;
 }
 
-function isDivisibleByFive(number) {
+const isDivisibleByFive = (number) => {
   return number % 5 === 0;
 }
 
 // This is the top level function in this module. Because we 'factored out' the modulo maths parts
 // into separate functions (see above) and gave the extracted functions readable, meaningful names,
 // this function now reads like the game rules
-function say(number) {
+const say = (number) => {
 
   if (isDivisibleByThree(number) && isDivisibleByFive(number)) {
     return 'Fizz Buzz';
@@ -32,4 +32,3 @@ function say(number) {
 // modules within our application. Our test code can use the say function by including
 // it via the 'require' function
 module.exports.say = say;
-

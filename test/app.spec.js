@@ -1,11 +1,11 @@
-var assert = require('chai').assert;
-var app = require('../application/app');
-var aBoolean = app.aBoolean;
-var aString = app.aString;
-var aNumber = app.aNumber;
+const assert = require('chai').assert;
+const app = require('../application/app');
+const aBoolean = app.aBoolean;
+const aString = app.aString;
+const aNumber = app.aNumber;
 
-describe('Code 4000 TDD Workshop', function () {
-  it('ensure that the project is ready to go', function ()  {
+describe('Code 4000 TDD Workshop', () => {
+  it('ensure that the project is ready to go', () => {
     assert.isOk(aBoolean());
     assert.isNotOk(!aBoolean());
     assert.equal(aBoolean(), true);

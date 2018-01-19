@@ -1,6 +1,5 @@
 // Some basic commands to help newbies get going
 // Execute this script with `node basicCommands.js`
-// N
 
 console.log('Hello World');
 
@@ -62,4 +61,4 @@ const person = {
   lastName: 'Smith'
 }
 console.log('First name is ' + person.firstName);
-console.log('Last name is ' + person.lastName);    
+console.log('Last name is ' + person.lastName);
