@@ -4,6 +4,7 @@
   "description": "Starter project for TDD workshop",
   "main": "index.js",
   "scripts": {
+    "start": "node basicCommands.js",
     "test": "mocha test/*.spec.js"
   },
   "repository": {
