@@ -5,11 +5,11 @@
 // because it is not 'exported' by the statement at the bottom of this file.
 const isDivisibleByThree = (number) => {
   return number % 3 === 0;
-}
+};
 
 const isDivisibleByFive = (number) => {
   return number % 5 === 0;
-}
+};
 
 // This is the top level function in this module. Because we 'factored out' the modulo maths parts
 // into separate functions (see above) and gave the extracted functions readable, meaningful names,
@@ -26,7 +26,7 @@ const say = (number) => {
 
   // This statement returns the String representation of the number that was passed into the function
   return String(number);
-}
+};
 
 // This is a NodeJS statement that makes the 'say' functional available to other
 // modules within our application. Our test code can use the say function by including

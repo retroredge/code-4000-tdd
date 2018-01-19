@@ -4,7 +4,7 @@
 console.log('Hello World');
 
 // Variables and types
-var x = 2;
+let x = 2;
 x = x * 2;
 console.log('The value of x is: ' + x);
 console.log(`The value of x add 2 is: ${x + 2}`);
@@ -16,8 +16,8 @@ const isItDaytime = true;
 console.log('Is it daytime? ' + isItDaytime);
 
 // Loops
-var text = '';
-for (i = 0; i < 5; i++) {
+let text = '';
+for (let i = 0; i < 5; i++) {
     text += `Number: ${i}\n`;
 }
 console.log(text);
@@ -39,7 +39,7 @@ animals.map(function (animal) {
 // Or using ES6 'arrow functions'
 animals.map((animal) => {
   console.log(animal);
-})
+});
 
 // Conditions
 const man = 'John';
@@ -59,6 +59,6 @@ if (man === 'Jim') {
 const person = {
   firstName: 'John',
   lastName: 'Smith'
-}
+};
 console.log('First name is ' + person.firstName);
 console.log('Last name is ' + person.lastName);
