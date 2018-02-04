@@ -53,9 +53,9 @@ console.log(animals);
 
 const removedAnimal = animals.pop();
 console.log(animals);
-console.log('We removed a ' + removedAnimal)
+console.log('We removed a ' + removedAnimal);
 
-animals[0] = 'Wolf'
+animals[0] = 'Wolf';
 console.log(animals);
 
 // ===========
@@ -82,13 +82,13 @@ const person = {
   lastName: 'Smith',
   age: 42
 };
-console.log(person)
+console.log(person);
 console.log('First name is ' + person.firstName);
 console.log('Last name is ' + person.lastName);
 console.log('Age is ' + person.age);
 
 // Adding properties
-person.mobileNumber = '0123 456789'
+person.mobileNumber = '0123 456789';
 console.log('Mobile number is ' + person.mobileNumber);
 
 person.mobileNumber = ['0123 456789', '0987 654321'];
@@ -112,4 +112,4 @@ const people = [
 ];
 people.forEach((person) => {
   console.log("Person " + JSON.stringify(person))
-})
+});
