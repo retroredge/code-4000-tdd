@@ -1,8 +1,5 @@
 const assert = require('chai').assert;
-const app = require('../application/app');
-const aBoolean = app.aBoolean;
-const aString = app.aString;
-const aNumber = app.aNumber;
+const { aBoolean, aString, aNumber } = require('../application/app');
 
 describe('Code 4000 TDD Workshop', () => {
   it('ensure that the project is ready to go', () => {
