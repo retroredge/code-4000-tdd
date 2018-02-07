@@ -38,6 +38,7 @@ console.log(animals[1]);
 console.log(animals[2]);
 console.log(animals.length);
 
+// Iterate over an array
 animals.forEach(function (animal) {
   console.log(animal);
 });
@@ -47,14 +48,16 @@ animals.forEach(animal => {
   console.log(animal);
 });
 
-// Append / remove to / from the array
+// Append to the end of the array
 animals.push('Horse');
 console.log(animals);
 
+// Remove last element from the array
 const removedAnimal = animals.pop();
 console.log(animals);
 console.log('We removed a ' + removedAnimal);
 
+// Modify an element of the array
 animals[0] = 'Wolf';
 console.log(animals);
 
@@ -80,22 +83,32 @@ if (man === 'Jim') {
 const person = {
   firstName: 'John',
   lastName: 'Smith',
-  age: 42
+  age: 42,
+  address: {
+    street: 'High st',
+    town: 'Sheffield'
+  }
+
 };
 console.log(person);
 console.log('First name is ' + person.firstName);
 console.log('Last name is ' + person.lastName);
 console.log('Age is ' + person.age);
+console.log('Town is ' + person.address.town);
+
+// Modify a property
+person.age = 29;
+console.log('Age is ' + person.age);
 
 // Adding properties
-person.mobileNumber = '0123 456789';
+person.mobileNumber = '01234 56789';
 console.log('Mobile number is ' + person.mobileNumber);
 
-person.mobileNumber = ['0123 456789', '0987 654321'];
+person.oldMobileNumber = ['01234 888777', '0987 654321'];
 console.log('Mobile numbers are ' + person.mobileNumber);
 
 // Get the keys
-console.log("Keys " + Object.keys(person));
+console.log("Keys: " + Object.keys(person));
 
 // Arrays of objects
 const people = [
@@ -110,6 +123,17 @@ const people = [
     age: 29
   }
 ];
+
 people.forEach((person) => {
   console.log("Person " + JSON.stringify(person))
 });
+
+// Classes
+class Foo {
+  double (x) {
+    return 2 * x;
+  }
+}
+
+const aFoo = new Foo();
+console.log(aFoo.double(5));
