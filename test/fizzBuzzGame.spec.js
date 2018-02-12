@@ -18,35 +18,35 @@ const game = require('../application/fizzBuzzGame');
 // you will exercise your game code 12 times.
 describe('Fizz Buzz Tests', () => {
 
-  // The 'it' function is part of the Mocha library and it allows
-  // us to provide a human readable description for the test along
-  // with a function containing the test(s) themselves.
-  it('says normal numbers', () => {
-      // This first test statement executes the game's 'say' function passing in the
-      // Integer 1. The result must be a String equal to '1' for the test to pass
-      assert.strictEqual(game.say(1), '1');
-      assert.strictEqual(game.say(2), '2');
-      assert.strictEqual(game.say(22), '22');
+    // The 'it' function is part of the Mocha library and it allows
+    // us to provide a human readable description for the test along
+    // with a function containing the test(s) themselves.
+    it('says normal numbers', () => {
+        // This first test statement executes the game's 'say' function passing in the
+        // Integer 1. The result must be a String equal to '1' for the test to pass
+        assert.strictEqual(game.say(1), '1');
+        assert.strictEqual(game.say(2), '2');
+        assert.strictEqual(game.say(22), '22');
     });
 
-  // Notice how the different 'it' functions in this module are used to
-  // group tests together that are checking for the similar behaviour
-  it('says "Fizz" for numbers divisible by 3', () => {
-    assert.strictEqual(game.say(3), 'Fizz');
-    assert.strictEqual(game.say(9), 'Fizz');
-    assert.strictEqual(game.say(21), 'Fizz');
-  });
+    // Notice how the different 'it' functions in this module are used to
+    // group tests together that are checking for the similar behaviour
+    it('says "Fizz" for numbers divisible by 3', () => {
+        assert.strictEqual(game.say(3), 'Fizz');
+        assert.strictEqual(game.say(9), 'Fizz');
+        assert.strictEqual(game.say(21), 'Fizz');
+    });
 
-  it('says "Buzz" for numbers divisible by 5', () => {
-    assert.strictEqual(game.say(5), 'Buzz');
-    assert.strictEqual(game.say(10), 'Buzz');
-    assert.strictEqual(game.say(20), 'Buzz');
-  });
+    it('says "Buzz" for numbers divisible by 5', () => {
+        assert.strictEqual(game.say(5), 'Buzz');
+        assert.strictEqual(game.say(10), 'Buzz');
+        assert.strictEqual(game.say(20), 'Buzz');
+    });
 
-  it('says "Fizz Buzz" for numbers divisible by 3 and 5', () => {
-    assert.strictEqual(game.say(15), 'Fizz Buzz');
-    assert.strictEqual(game.say(30), 'Fizz Buzz');
-    assert.strictEqual(game.say(45), 'Fizz Buzz');
-  })
+    it('says "Fizz Buzz" for numbers divisible by 3 and 5', () => {
+        assert.strictEqual(game.say(15), 'Fizz Buzz');
+        assert.strictEqual(game.say(30), 'Fizz Buzz');
+        assert.strictEqual(game.say(45), 'Fizz Buzz');
+    })
 
 });

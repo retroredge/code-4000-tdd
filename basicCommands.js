@@ -24,8 +24,9 @@ console.log(text);
 
 // Functions
 function doubleIt(x) {
-  return x * 2;
+    return x * 2;
 }
+
 console.log('Five times two is: ' + doubleIt(5));
 
 // =======
@@ -40,12 +41,12 @@ console.log(animals.length);
 
 // Iterate over an array
 animals.forEach(function (animal) {
-  console.log(animal);
+    console.log(animal);
 });
 
 // Or using ES6 'arrow functions'
 animals.forEach(animal => {
-  console.log(animal);
+    console.log(animal);
 });
 
 // Append to the end of the array
@@ -66,28 +67,28 @@ console.log(animals);
 // ===========
 const man = 'John';
 if (man === 'John') {
-  console.log('The name was John');
+    console.log('The name was John');
 } else {
-  console.log('We won`t see this in the log');
+    console.log('We won`t see this in the log');
 }
 
 if (man === 'Jim') {
-  console.log('We won`t see this in the log');
+    console.log('We won`t see this in the log');
 } else {
-  console.log('The name was NOT Jim');
+    console.log('The name was NOT Jim');
 }
 
 // ========
 // Objects
 // ========
 const person = {
-  firstName: 'John',
-  lastName: 'Smith',
-  age: 42,
-  address: {
-    street: 'High st',
-    town: 'Sheffield'
-  }
+    firstName: 'John',
+    lastName: 'Smith',
+    age: 42,
+    address: {
+        street: 'High st',
+        town: 'Sheffield'
+    }
 
 };
 console.log(person);
@@ -112,27 +113,27 @@ console.log("Keys: " + Object.keys(person));
 
 // Arrays of objects
 const people = [
-  {
-    firstName: 'John',
-    lastName: 'Smith',
-    age: 42
-  },
-  {
-    firstName: 'Joe',
-    lastName: 'Bloggs',
-    age: 29
-  }
+    {
+        firstName: 'John',
+        lastName: 'Smith',
+        age: 42
+    },
+    {
+        firstName: 'Joe',
+        lastName: 'Bloggs',
+        age: 29
+    }
 ];
 
 people.forEach((person) => {
-  console.log("Person " + JSON.stringify(person))
+    console.log("Person " + JSON.stringify(person))
 });
 
 // Classes
 class Foo {
-  double (x) {
-    return 2 * x;
-  }
+    double(x) {
+        return 2 * x;
+    }
 }
 
 const aFoo = new Foo();

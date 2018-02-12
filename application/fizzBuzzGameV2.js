@@ -4,11 +4,11 @@
 // This is a function that is 'private' to this module. It is not available for other files to include and use
 // because it is not 'exported' by the statement at the bottom of this file.
 const isDivisibleByThree = (number) => {
-  return number % 3 === 0;
+    return number % 3 === 0;
 };
 
 const isDivisibleByFive = (number) => {
-  return number % 5 === 0;
+    return number % 5 === 0;
 };
 
 // This is the top level function in this module. Because we 'factored out' the modulo maths parts
@@ -16,16 +16,16 @@ const isDivisibleByFive = (number) => {
 // this function now reads like the game rules
 const say = (number) => {
 
-  if (isDivisibleByThree(number) && isDivisibleByFive(number)) {
-    return 'Fizz Buzz';
-  } else if (isDivisibleByThree(number))  {
-    return 'Fizz';
-  } else if (isDivisibleByFive(number))  {
-    return 'Buzz';
-  }
+    if (isDivisibleByThree(number) && isDivisibleByFive(number)) {
+        return 'Fizz Buzz';
+    } else if (isDivisibleByThree(number)) {
+        return 'Fizz';
+    } else if (isDivisibleByFive(number)) {
+        return 'Buzz';
+    }
 
-  // This statement returns the String representation of the number that was passed into the function
-  return String(number);
+    // This statement returns the String representation of the number that was passed into the function
+    return String(number);
 };
 
 // This is a NodeJS statement that makes the 'say' functional available to other

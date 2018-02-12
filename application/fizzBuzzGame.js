@@ -6,16 +6,16 @@
 
 // This is the top level and only function in this module
 const say = (number) => {
-  if (number % 3 === 0 && number % 5 === 0) {
-    return 'Fizz Buzz';
-  } else if (number % 3 === 0) {
-    return 'Fizz';
-  } else if (number % 5 === 0) {
-    return 'Buzz';
-  }
+    if (number % 3 === 0 && number % 5 === 0) {
+        return 'Fizz Buzz';
+    } else if (number % 3 === 0) {
+        return 'Fizz';
+    } else if (number % 5 === 0) {
+        return 'Buzz';
+    }
 
-  // This statement returns the String representation of the number that was passed into the function
-  return String(number);
+    // This statement returns the String representation of the number that was passed into the function
+    return String(number);
 };
 
 // This is a NodeJS statement that makes the 'say' functional available to other
