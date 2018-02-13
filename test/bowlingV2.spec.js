@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const game = require('../application/bowlingV2');
 
-describe('Bowling game tests', () => {
+describe('Bowling game V2 tests', () => {
     beforeEach(() => {
         game.reset();
     });
