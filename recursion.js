@@ -38,8 +38,27 @@ const doubleValues = function(aList, doubles) {
         return doubles;
     }
 
-    doubles.push(aList.pop()*2);
+    doubles.push(aList.pop() * 2);
     return doubleValues(aList, doubles)
 };
-
 console.log(doubleValues(numbers, []));
+
+
+const sumOfNumbersUpTo = (x) => {
+    if (x === 0) {
+        return 0;
+    }
+
+    return x + sumOfNumbersUpTo(x - 1);
+};
+console.log(sumOfNumbersUpTo(5));
+
+
+const concatLetters = (aList) => {
+    if (aList.length === 0) {
+        return '';
+    }
+
+    return aList.shift() + concatLetters(aList);
+};
+console.log(concatLetters(['d', 'o', 'g']));
