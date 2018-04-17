@@ -1,8 +1,8 @@
 // Iterative
 const factorialV1  = function (x) {
-    let total = 1;
+    let total = x;
     while(x > 1) {
-        total = total * x;
+        total = total * (x - 1);
         x--;
     }
     return total;
@@ -14,7 +14,7 @@ const factorialV2 = function (x) {
         return 1
     }
 
-    return x * factorialV2((x - 1));
+    return x * factorialV2(x - 1);
 };
 
 console.log(factorialV1(1));
@@ -41,7 +41,7 @@ const doubleValues = function(aList, doubles) {
     doubles.push(aList.pop() * 2);
     return doubleValues(aList, doubles)
 };
-console.log(doubleValues(numbers, []));
+console.log('doubleValues: ' + doubleValues(numbers, []));
 
 
 const sumOfNumbersUpTo = (x) => {
@@ -51,7 +51,7 @@ const sumOfNumbersUpTo = (x) => {
 
     return x + sumOfNumbersUpTo(x - 1);
 };
-console.log(sumOfNumbersUpTo(5));
+console.log('sumOfNumbersUpTo 5: ' + sumOfNumbersUpTo(5));
 
 
 const concatLetters = (aList) => {
@@ -61,4 +61,4 @@ const concatLetters = (aList) => {
 
     return aList.shift() + concatLetters(aList);
 };
-console.log(concatLetters(['d', 'o', 'g']));
+console.log('concatLetters: ' + concatLetters(['d', 'o', 'g']));
