@@ -42,4 +42,21 @@ console.log(
     ages.reduce(average, 0)
 );
 
+// Extract a unique list of colours from nested data
+const animals = [
+    {animal: 'bird', colour: ['blue','green']},
+    {animal: 'fish', colour: ['green','black','orange','blue']},
+    {animal: 'mammal', colour: ['green','red']}
+];
+const uniqueColours = (result, animal) => {
+    animal.colour.forEach( colour => {
+        if (result.indexOf(colour) === -1) {
+            result.push(colour);
+        }
+    });
+    return result;
+};
+console.log(
+    animals.reduce(uniqueColours, [])
+);
 
