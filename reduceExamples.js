@@ -1,15 +1,13 @@
-const database = require('./data').database;
-
 // Add up some numbers
 const numbers = [1, 2, 3, 4, 5];
-const adder = (total, number) => total = total + number;
+const adder = (total, number) => total + number;
 console.log(
     numbers.reduce(adder, 0)
 );
 
 // Join a list of words
 const words = ['The', 'quick', 'brown', 'fox'];
-const wordAdder = (result, word) => result = result + ' ' + word;
+const wordAdder = (result, word) => result + ' ' + word;
 console.log(
     words.reduce(wordAdder, '')
 );
