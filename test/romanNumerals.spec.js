@@ -31,7 +31,7 @@ describe('Roman numerals tests', () => {
         assert.strictEqual(romanNumerals.convert(11), 'XI');
         assert.strictEqual(romanNumerals.convert(12), 'XII');
         assert.strictEqual(romanNumerals.convert(13), 'XIII');
-    })
+    });
 
     it('converts 15, 16, 17, 19', () => {
         assert.strictEqual(romanNumerals.convert(15), 'XV');
